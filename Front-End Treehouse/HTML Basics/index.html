@@ -4,18 +4,18 @@
 <head>
     <title>Thompson Family Tree</title>
 </head>
-
+<!-- Comment about things to make code more readable -->
 <body>
-    <div>
+    <div>   <!--Start Wrapper Div-->
         <header>
             <nav>
-                <li><a href="#">Family Tree</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resources/Articles</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#family-tree">Family Tree</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#articles">Resources/Articles</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
             </nav>
 
-            <h1>Thompson Family Tree </h1>
+            <h1>Thompson Family Tree</h1>
 
             <figure>
                 <img src="img/family-photo.jpg" alt="Virtual reality User"
@@ -28,14 +28,12 @@
 
         <div>
             <p>The history runs back <strong>hundreds</strong> of years, but the end of the tree isn't even nearly in
-                sight. Together we
-                can
-                attempt to peice to together and find out our roots.
+                sight. Together we can attempt to peice to together and find out our roots.
             </p>
         </div>
 
         <main>
-            <section>
+            <section id="family-tree">
                 <h2>Family Tree</h2>
 
                 <figure>
@@ -44,7 +42,7 @@
                 </figure>
             </section>
 
-            <section>
+            <section id="about">
                 <h2>About</h2>
 
                 <h3>The Roots of the Family</h3>
@@ -59,8 +57,8 @@
                 </p>
             </section>
 
-            <section>
-                <h2>Resources/Articles</h2>
+            <section id="articles">
+                <h2>Resources &amp; Articles</h2>
 
                 <article>
                     <header>
@@ -78,7 +76,7 @@
                         mollit anim id est
                         laborum.
                     </p>
-                    <a href="article/article1.html">Read More</a>
+                    <a href="article/article1.html#article-track">Read More</a>
                     <footer>Published March 20th, 2000</footer>
                 </article>
 
@@ -98,7 +96,7 @@
                         mollit anim id est
                         laborum.
                     </p>
-                    <a href="article/1971/article2.html">Read More</a>
+                    <a href="article/1971/article2.html#article-family">Read More</a>
                     <footer>Published March 21st, 1971</footer>
                 </article>
 
@@ -121,13 +119,13 @@
                 </aside>
             </section>
 
-            <section>
+            <section id="contact-us">
                 <h2>Contact Us</h2>
 
                 <h3>Contact Information</h3>
 
                 <ol>
-                    <li><strong>Email</strong> : dbt59@rocketmail.com</li>
+                    <li><strong>Email</strong> : <a href="mailto:dbt59@rocketmail.com?subject=Thompson%20Family%20Tree">dbt59@rocketmail.com</a></li>
                     <li><strong>Address</strong></li>
                     <address>
                         Family Tree<br>
@@ -142,10 +140,12 @@
 
         </main>
 
+        <!-- Hit ctrl forward slash to create comments quickly -->
+
         <footer>
             <p><small>&copy;2020 Thompson Family, Family Tree</small></p>
         </footer>
-    </div>
+    </div> <!--End Wrapper Div-->
 </body>
 
 </html>
