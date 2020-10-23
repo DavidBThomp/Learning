@@ -1,0 +1,93 @@
+
+
+/*universal selector is an asterick *, overrides all others*/
+
+* {
+}
+
+/*Type/element selectors*/
+
+body {
+    color: #878787;
+    margin: 0;
+}
+
+h1 {
+    font-size: 90px;
+    color: white;
+}
+
+h2 {
+    font-size: 53px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #48525c;
+}
+
+/*ID Selcetors*/
+
+#main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: solid 10px orange;
+}
+
+/*class elements can do what IDs do but can be used on more than 1 element unlike IDs*/
+
+.primary-content {
+    text-align: center;
+}
+
+.main-header {
+    background-color: orange;
+}
+
+.t-border{
+    border-top: 2px solid lightgrey;
+}
+
+/*Desendant Selectors*/
+
+.main-header span{
+    color: white;
+    font-size: 26px;
+}
+
+ul li {
+    background-color: tomato;
+    color: white;
+    margin-bottom: 5px;
+}
+
+ol li {
+    background-color: tomato;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/*Psuedo Classes is a keyword we use to target an element in a specific state*/
+
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: forestgreen;
+}
+
+a:active {
+    color: lightcoral;
+}
+
+:focus {
+    color: white;
+    background-color: orange;
+}
+/* ctrl forward slash to instand comment */
+/* ID > Class > Element */

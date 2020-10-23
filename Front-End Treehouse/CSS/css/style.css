@@ -1,6 +1,11 @@
 
 @import "import-styles.css";
 
+/* Selector {
+    property: value;
+    }
+*/
+
 body {
     text-align: center;
 }
