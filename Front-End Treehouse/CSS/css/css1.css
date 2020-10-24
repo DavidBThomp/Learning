@@ -1,6 +1,7 @@
 
 
 /*universal selector is an asterick *, overrides all others*/
+/*CSS has many different data types, such as Integers, Numbers, percentages, colors, etc*/
 
 * {
 }
@@ -10,15 +11,21 @@
 body {
     color: #878787;
     margin: 0;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
-    font-size: 90px;
-    color: white;
+    font-size: 5.625rem; /* 90px/16px */
+    color: rgba(255, 255, 255, .5);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.3;
 }
 
 h2 {
     font-size: 53px;
+    text-decoration: underline;
+    font-weight: normal;
 }
 
 h3 {
@@ -31,29 +38,31 @@ h3 {
 #main-footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    border-bottom: solid 10px orange;
+    border-bottom: solid 10px #ffa949;
 }
 
 /*class elements can do what IDs do but can be used on more than 1 element unlike IDs*/
 
-.primary-content {
+.primary-content,
+.main-header {
     text-align: center;
 }
 
 .main-header {
-    background-color: orange;
+    background-color: #ffa949;
+    font-size: 26px;
 }
 
 .t-border{
     border-top: 2px solid lightgrey;
 }
 
-/*Desendant Selectors*/
-
-.main-header span{
+.title {
     color: white;
-    font-size: 26px;
-}
+    font-size: 1.625rem; /* 26/16px = em */
+ }
+
+/*Desendant Selectors*/
 
 ul li {
     background-color: tomato;
@@ -70,7 +79,8 @@ ol li {
 /*Psuedo Classes is a keyword we use to target an element in a specific state*/
 
 a:link {
-    color: orange;
+    color: rgb(255, 169, 73);
+    text-decoration: none;
 }
 
 a:visited {
@@ -78,7 +88,7 @@ a:visited {
 }
 
 a:hover {
-    color: forestgreen;
+    color: rgba(255, 169, 73, .4);
 }
 
 a:active {
@@ -91,3 +101,8 @@ a:active {
 }
 /* ctrl forward slash to instand comment */
 /* ID > Class > Element */
+
+.primary-content, 
+.seconday-content {
+    width: 60%;
+}
