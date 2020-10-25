@@ -4,6 +4,7 @@
 /*CSS has many different data types, such as Integers, Numbers, percentages, colors, etc*/
 
 * {
+    text-align: center;
 }
 
 /*Type/element selectors*/
@@ -12,6 +13,7 @@ body {
     color: #878787;
     margin: 0;
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 h1 {
@@ -26,14 +28,31 @@ h2 {
     font-size: 53px;
     text-decoration: underline;
     font-weight: normal;
+    margin-bottom: .5em; /*26px*/ 
 }
 
 h3 {
     font-size: 20px;
     color: #48525c;
+    margin-bottom: 1.7em; /*34px*/
 }
 
+/* li{
+    display: inline-block;
+    padding: 0 12px;
+    border-right: solid 1px;
+    margin: 80px 0;
+} */
+
 /*ID Selcetors*/
+
+.callout {
+    font-size: 1.25em;
+    border-bottom: 3px solid;
+    padding: 0 9px 3px;
+    margin-top: 20px;
+    display: inline-block;
+}
 
 #main-footer {
     padding-top: 60px;
@@ -65,14 +84,11 @@ h3 {
 /*Desendant Selectors*/
 
 ul li {
-    background-color: tomato;
     color: white;
     margin-bottom: 5px;
 }
 
 ol li {
-    background-color: tomato;
-    color: white;
     margin-bottom: 5px;
 }
 
@@ -105,4 +121,20 @@ a:active {
 .primary-content, 
 .seconday-content {
     width: 60%;
+    margin: auto;
 }
+
+.wildlife {
+    color: white;
+    background-color: #434a52;
+    padding: 18% 24%;
+    border-top: 10px solid #ffa949;
+    margin: 105px 0 60px;
+    /* 
+    margin-top: 105px;
+    margin-right: 0;
+    margin-bottom: 60px;
+    margin left: 0;
+     */
+}
+
