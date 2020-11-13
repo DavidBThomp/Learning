@@ -326,3 +326,19 @@ a:active {
         padding: 20px 0;
     }
 }
+
+/* Cascade ------------------- */
+/* User Agent Filesheet is default */
+/* User Styles - Made by user typically for acessability */
+/* Author Style - What we've been making, most important is author > user > agent */
+/* Importance,specificty, source order  */
+
+
+/* Specificty --------------- */
+/*  the more specific the identifier, the declaration will be choosen from that */
+/* Inline > ID > Class > type */
+
+
+/* Inheritance----------------- */
+/* Elements style values are copied from parent element */
+/* inital will ignore inheritance */
