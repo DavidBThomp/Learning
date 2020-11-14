@@ -1,0 +1,19 @@
+This is a file to take notes on chrome dev tools, a powerful css debugger.
+
+The only clue we have in CSS errors, is the faulty page. Tools such as ChromeDevTools, DevTools for short.
+Quickly inspect and understand ho CSS is used in browser.
+
+Element panel displays DOM or document object model of webpage; the HTML code. It updates in real time.
+Highlighting and selecting elements will allow for quick selecting, you can hide, delete, and update elements in real time.
+
+Style Pane can edit, add, and remove CSS properties and see changes in real time. Changes aren't permanant like Element panel.
+Also helps with cascading rules, shown from top to bottom.
+CSS rules that are overwritten are shown with strike through text.
+Also will show base styles beneath it.
+
+Identify Errors, Visualise states, saves, etc.
+.hov can change the state, erros will pop up for incorrect css
+Sources Panel will have all the CSS in it, allowing you to copy and save changes
+
+Computed pane: The final set of CSS properties applied to an elements
+Box spinal diagram at the top displays space taken by element; you can edit directly into this box.
