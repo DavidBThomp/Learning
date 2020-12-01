@@ -1,0 +1,4 @@
+alert("Hello, World!");
+console.log("Hello, from the console!");
+alert("Thanks for visiting");
+document.write("<h1>Welcome to my Homepage</h1>");
