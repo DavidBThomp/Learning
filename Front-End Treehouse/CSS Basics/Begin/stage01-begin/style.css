@@ -1,15 +1,48 @@
-body {
-    text-align: center;
+/* 
+Selector {
+    Decloration Block Property: Value;
+ } 
+ */
+
+
+/* Universal Selector */
+* {}
+
+
+/* Type/Element Selector */
+p {
+    color: olive;
+    font-size: 26px;
 }
 
 header {
     background-color: orange;
 }
 
-h1 {
-    font-size: 90px;
+footer {
+    background-color: lightcoral;
 }
 
-p {
-    font-size: 20px;
+a {
+    color: darkblue;
+    background-color: peachpuff;
+    text-decoration: none;
+}
+
+
+/* ID Selector - Only can target one element*/
+#skills-list {
+    background-color: lightskyblue;
+    padding: 36px;
+}
+
+#education {
+    border: red 3px solid;
+}
+
+/* Class Selector - Can target multiple elements and even have multiple to same element */
+.top-skill {
+    font-weight: bold;
+    background-color: teal;
+    color: papayawhip;
 }
