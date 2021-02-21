@@ -78,3 +78,35 @@ img {
     background-color: teal;
     color: papayawhip;
 }
+
+/* Descendant Selectors - Will select element that are nested within another */
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* Psuedo classes - Unique states that a part a page can be in such as first list item or hovering */
+a:visited {
+    color: firebrick;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: papayawhip;
+    text-decoration: underline;
+}
+
+img:hover {
+    border: blue 8px solid;
+}
+
+a:focus {
+    color: black;
+    background-color: orange;
+}
+
+ol li:first-child {
+    font-weight: bold;
+}
