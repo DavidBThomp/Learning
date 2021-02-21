@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,26 +20,29 @@
       background-color: orange;
     } */
   </style>
-<!-- Internal Styling -->
-<!-- H1 is overwritten inline style below -->
-<!-- Duplicate styles across pages, pages won't cache CSS -->
-<!-- DRY - Don't repeat yourself -->
+  <!-- Internal Styling -->
+  <!-- H1 is overwritten inline style below -->
+  <!-- Duplicate styles across pages, pages won't cache CSS -->
+  <!-- DRY - Don't repeat yourself -->
 </head>
+
 <body>
   <main>
     <header>
-      <h1 style="color: white;">Developer Diane: Resume</h1>
-<!-- Example of inline style -->
-<!-- Not considered good practice, doesn't seperate content from presentation -->
-<!-- Very powerful, specific, and hard to manage -->
-      <address>
-        <p>website: developerdiane.com</p>
-        <p>email: diane@developerdiane.com</p>
-      </address>
-      <img src="developer-diane.jpg" alt="Developer Diane coding on her laptop.">
-    </header>          
+      <div id="header-box">
+        <h1 style="color: white;">Developer Diane: Resume</h1>
+        <!-- Example of inline style -->
+        <!-- Not considered good practice, doesn't seperate content from presentation -->
+        <!-- Very powerful, specific, and hard to manage -->
+        <address>
+          <p>website: developerdiane.com</p>
+          <p>email: diane@developerdiane.com</p>
+        </address>
+        <img src="developer-diane.jpg" alt="Developer Diane coding on her laptop.">
+      </div>
+    </header>
     <section id="education">
-      <h2>Education</h2>          
+      <h2>Education</h2>
       <ul>
         <li>
           <h3><a href="https://teamtreehouse.com">Treehouse</a></h3>
@@ -85,4 +89,5 @@
     <footer>©2020 Developer Diane.</footer>
   </main>
 </body>
+
 </html>

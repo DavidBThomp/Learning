@@ -10,13 +10,29 @@ Selector {
 
 
 /* Type/Element Selector */
+html {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 4rem; 
+    /* EM is relative unit for fonts, 4em is 20*4 so 80px. This is better for margin and other spacing, but it stacks with other sizes */
+    /* REM is relative for fonts but always refer to root font size */
+    margin-bottom: 1.5rem;
+}
+
 p {
     color: olive;
     font-size: 26px;
+        /* Absolute unit - Consistently the same no matter device or relativity */
 }
 
 header {
-    background-color: orange;
+    background-color: #ff6600;
+    /* Hexadecimal color value, can be abbreviated #f60 */
+    width: 80%;
+    /* Relative Unit - Will adjust according to parent */
+    margin-left: 10%;
 }
 
 footer {
@@ -29,6 +45,17 @@ a {
     text-decoration: none;
 }
 
+a:focus {
+    color: rgb(255, 255, 255);
+    /* RGB Color selector */
+    background-color: rgba(255, 165, 0, 0.5);
+    /* Transparent or Alpha */
+}
+
+img {
+    width: 100%;
+}
+
 
 /* ID Selector - Only can target one element*/
 #skills-list {
@@ -38,6 +65,11 @@ a {
 
 #education {
     border: red 3px solid;
+}
+
+#header-box {
+    width: 50%;
+    background-color: tomato;
 }
 
 /* Class Selector - Can target multiple elements and even have multiple to same element */
