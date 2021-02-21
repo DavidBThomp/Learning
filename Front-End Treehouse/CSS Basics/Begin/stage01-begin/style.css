@@ -1,3 +1,12 @@
+/* CSS CASCADE */
+
+/*  1) Origin & Importance | File Source
+    2) Selector Specificity | Inline > ID > Class > Type
+    3) Order of Appearance | Page is read from top to bottom
+    4) Initial & Inherited Properties (default values) | Children of certain elements will inherit parents
+*/
+
+
 /* 
 Selector {
     Decloration Block Property: Value;
@@ -15,7 +24,7 @@ html {
 }
 
 h1 {
-    font-size: 4rem; 
+    font-size: 4rem;
     /* EM is relative unit for fonts, 4em is 20*4 so 80px. This is better for margin and other spacing, but it stacks with other sizes */
     /* REM is relative for fonts but always refer to root font size */
     margin-bottom: 1.5rem;
@@ -24,7 +33,7 @@ h1 {
 p {
     color: olive;
     font-size: 26px;
-        /* Absolute unit - Consistently the same no matter device or relativity */
+    /* Absolute unit - Consistently the same no matter device or relativity */
 }
 
 header {
