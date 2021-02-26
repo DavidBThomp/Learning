@@ -1,0 +1,35 @@
+
+/* This is one way to make the header flush with the edges of the page */
+
+/* body {
+    margin: 0px;
+}
+
+article, aside, footer {
+    margin: 8px;
+} */
+
+header {
+    background-color: #294969;
+    color: ghostwhite;
+    padding: 10px 15px 10px 15px; 
+    /* Short hand for padding instead of applying to top, right, left, and bottom */
+    /* Reltative values are both based on the width of box, not the height */
+
+    border: orange 12px solid;
+    /* short hand for width, style, and color */
+
+
+    margin: -8px -8px 20px;
+    /* Negative values only work for margin, can be used to extend box */
+}
+
+footer {
+    width: 200px;
+    padding: 4px;
+    border: 2px solid #ffa949;
+    margin: 30px auto 15px;
+    color: #294969;
+    font-size: .8rem;
+    text-align: center;
+}
