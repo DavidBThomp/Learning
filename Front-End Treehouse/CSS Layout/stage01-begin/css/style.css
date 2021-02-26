@@ -9,6 +9,12 @@ article, aside, footer {
     margin: 8px;
 } */
 
+*{
+    box-sizing: border-box;
+}
+
+/* Border box includes box size and border */
+
 header {
     background-color: #294969;
     color: ghostwhite;
@@ -22,6 +28,9 @@ header {
 
     margin: -8px -8px 20px;
     /* Negative values only work for margin, can be used to extend box */
+
+    height: 25vh;
+    /* Viewport height */
 }
 
 footer {
@@ -32,4 +41,23 @@ footer {
     color: #294969;
     font-size: .8rem;
     text-align: center;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem;
+    border-bottom: 2px dotted #666;
+    background-color: azure;
+}
+
+aside img, #bio {
+    width: 600px;
+    max-width: 100%;
+}
+
+#bio {
+    width: 600px;
+    padding: 2rem;
+    border: 5px solid tomato;
+    background-color: mistyrose;
 }
