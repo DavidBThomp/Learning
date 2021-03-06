@@ -26,12 +26,33 @@ header {
     /* short hand for width, style, and color */
 
 
-    margin: -8px -8px 20px;
+    /* margin: -8px -8px 20px; */
     /* Negative values only work for margin, can be used to extend box */
 
-    height: 25vh;
+    /* height: 25vh; */
     /* Viewport height */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
+
+article {
+    margin-top: 3rem;
+}
+
+#interesting-banner {
+    position: sticky;
+    top: 0;
+    padding: 10px 15px;
+    border: 12px solid lightsalmon;
+    margin: 0 -8px;
+    background-color: firebrick;
+    color: white;
+    font-weight: bold;
+}
+/* Sticky position is similar to fixed, that it sticks once viewport reaches certain point */
 
 footer {
     width: 200px;
@@ -50,10 +71,28 @@ section {
     background-color: azure;
 }
 
-aside img, #bio {
-    width: 600px;
-    max-width: 100%;
+figure {
+    position: relative; 
+    margin: 0;
 }
+
+/* Postitioning can also be used to deciede what goes where on a page, absolute will be relative to relative parent */
+/* Fixed elements are relative to viewport and always visible */
+/* Z-index is what is used to determine priotrity of stacking */
+
+figcaption {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    background-color: yellow;
+    text-align: center;
+}
+
+figure, aside img, #bio {
+    width: 100%;
+    max-width: 480px;
+}
+
 
 #bio {
     width: 600px;
@@ -61,3 +100,29 @@ aside img, #bio {
     border: 5px solid tomato;
     background-color: mistyrose;
 }
+
+.hide {
+    display: none;
+}
+
+.small-img {
+    float: left;
+    width: 300px;
+    margin: 0 1rem 1rem 0;
+}
+
+/* Float and clear work in conjuction, orginally used when mobile devices first came out */
+
+.clear {
+    clear: both;
+}
+
+ul li {
+    display: inline-block;
+    width: 30%;
+    padding: 10px 0;
+    background-color: yellow;
+    text-align: center;
+}
+
+/* Common display options include inline, block, none, and inline-block, inline-block being the most modifiable of the 4 */
