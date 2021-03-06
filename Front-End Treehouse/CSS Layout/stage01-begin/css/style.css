@@ -36,6 +36,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
 }
 
 article {
@@ -51,6 +52,7 @@ article {
     background-color: firebrick;
     color: white;
     font-weight: bold;
+    z-index: 3;
 }
 /* Sticky position is similar to fixed, that it sticks once viewport reaches certain point */
 
@@ -74,6 +76,7 @@ section {
 figure {
     position: relative; 
     margin: 0;
+    z-index: 1;
 }
 
 /* Postitioning can also be used to deciede what goes where on a page, absolute will be relative to relative parent */
@@ -106,19 +109,13 @@ figure, aside img, #bio {
 }
 
 .small-img {
-    float: left;
-    width: 300px;
-    margin: 0 1rem 1rem 0;
+    width: 100%
 }
 
-/* Float and clear work in conjuction, orginally used when mobile devices first came out */
 
-.clear {
-    clear: both;
-}
 
 ul li {
-    display: inline-block;
+    margin: 0 0 10px 0;
     width: 30%;
     padding: 10px 0;
     background-color: yellow;
@@ -126,3 +123,49 @@ ul li {
 }
 
 /* Common display options include inline, block, none, and inline-block, inline-block being the most modifiable of the 4 */
+
+@media print {
+    section {
+        min-height: auto;
+    }
+    #interesting-banner {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    ul li {
+        display: inline-block;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 800px) {
+    header {
+        color: yellow;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .small-img {
+        float: left;
+        width: 300px;
+        margin: 0 1rem 1rem 0;
+    }
+    
+    /* Float and clear work in conjuction, orginally used when mobile devices first came out */
+    
+    .clear {
+        clear: both;
+    }
+}
+
+@media screen and (min-width:900px), (orientation: portrait) {
+    section {
+        background-color: cornsilk;
+    }
+}
+/* Commas are used for OR Statements */
+
+/* Media queries only apply when certain conditions are met */
+/* CSS Tricks media queries is very good resource */
