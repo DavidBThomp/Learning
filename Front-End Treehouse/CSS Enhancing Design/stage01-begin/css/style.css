@@ -36,6 +36,11 @@ body {
   /* A font stack is used as a fall back for fonts that aren't websafe */
 }
 
+a {
+  color: #cc4e13;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 4rem;
   text-shadow: 1px 2px 3px rgba(0,10,30,.5);
@@ -43,6 +48,11 @@ h1 {
   /* text-shadow: -10px 5px  0 blue,
                 8px 16px 0 yellow; 
     text shadows can take multiple inputs*/
+}
+
+h1::after {
+  content: '\2193';
+  display: block;
 }
 
 h2 {
@@ -56,6 +66,8 @@ h3 {
 img {
   width: 100%;
   /* responsive images */
+
+  border-radius: 10px;
 }
 
 
@@ -79,5 +91,30 @@ header, footer {
 main {
   hyphens: auto;
 }
+
+#wildlife {
+  padding: 20% 15%;
+  border-top: 12px solid #f3753b;
+  background-color: #454959;
+  color: white;
+  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+  border-radius: 12px 12px 0 0;
+}
+
+.callout {
+  display: block;
+  width: 250px;
+  padding: .25rem 1rem;
+  margin: 1rem auto;
+  background-color: #cc4e13;
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  border-radius: 20px/10px;
+  /* 20px horizonal and 10px of vertical radius */
+  box-shadow: 1px 2px 3px rgba(0,10,30,.5);
+}
+
+
 
 /* Media Queries ------------------- */
