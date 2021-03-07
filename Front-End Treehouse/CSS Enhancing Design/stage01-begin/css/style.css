@@ -34,6 +34,12 @@ body {
 
   margin: 1rem;
   /* A font stack is used as a fall back for fonts that aren't websafe */
+
+  /*             ---Background image example--- 
+  background-image: url(http://placekitten.com/200/300);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 400px 600px; */
 }
 
 a {
@@ -78,6 +84,8 @@ header {
   background-color: #f3753b;
   color: white;
   margin: -1rem -1rem 1rem;
+  background: url(../img/mountains.jpg) center / cover no-repeat #f3753b;
+  background-blend-mode: multiply;
 }
 
 header, footer {
@@ -95,10 +103,11 @@ main {
 #wildlife {
   padding: 20% 15%;
   border-top: 12px solid #f3753b;
-  background-color: #454959;
   color: white;
   box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
   border-radius: 12px 12px 0 0;
+
+  background: url(../img/bear.jpg) center / cover #454959;
 }
 
 .callout {
