@@ -1,9 +1,7 @@
-function alertRandom() {
+function getRandomNumber() {
   const randomNumber = Math.floor( Math.random() * 6 ) + 1;
-  alert(randomNumber);
+  return randomNumber;
 }
 
-alertRandom();
-alertRandom();
-alertRandom();
-alertRandom();
+const dieroll = getRandomNumber();
+alert(getRandomNumber());
