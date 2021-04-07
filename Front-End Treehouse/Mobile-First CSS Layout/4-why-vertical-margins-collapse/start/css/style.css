@@ -12,11 +12,16 @@ a {
 	text-decoration: none;
 }
 
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
 /* ---- Layout Containers ---- */
+
+.name {
+	margin: 0;
+}
 
 .wrapper {
 	width: 70%;
@@ -25,6 +30,7 @@ a {
 
 .main-header {
 	background: #3acec2;
+	padding: 1em 0;
 }
 
 .main-footer {

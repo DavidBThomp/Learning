@@ -53,6 +53,11 @@ a {
 ==================================== */
 
 @media (min-width: 769px) {
+	
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+/* 100% of viewport height minus content size */
 	.container {
 		width: 70%;
 		max-width: 1000px;
