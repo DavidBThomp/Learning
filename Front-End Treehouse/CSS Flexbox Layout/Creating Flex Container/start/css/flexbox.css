@@ -4,6 +4,26 @@
 
 .container {
   display: flex;
-  height: 350px;
+
+  flex-direction: row; 
+  /* Default Value - Items are in row */
+
+  flex-wrap: wrap;
+  /* Not defualt - Makes items go to next line and wrap if out of space */
+
+  justify-content: flex-start;
+  /* Default value - Tells the content where to be relative to main */
+}
+
+.item {
+  flex-grow: 1;
+  /* Flex Grow defines how much items grow to fit the box */
+}
+
+.item-1 {
+  order: 0;
+  /* Default value - Changes the order by priority (-1 will be first, 1 will be last in this case) */
+  flex-grow: 2;
+  /* This will get 2x more space than other items */
 }
 
