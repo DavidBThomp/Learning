@@ -5,12 +5,17 @@
 @media (min-width: 769px) {
 
 	.main-header,
-	.main-nav {
+	.main-nav,
+	.row {
 		display: flex;
 	}
 	.main-header {
 		flex-direction: column;
 		align-items: center;
+	}
+	.col {
+		flex: 1;
+		/* Flex grow 1, both cols take equal space */
 	}
 
 }
@@ -20,6 +25,10 @@
 	.main-header {
 		flex-direction: row;
 		justify-content: space-between;
+	}
+
+	.primary {
+		flex: 2;
 	}
 
 }
