@@ -2,6 +2,9 @@
 import * as React from 'react';
 import Layout from '../components/layout'
 
+// Static Image Plugin
+import { StaticImage } from 'gatsby-plugin-image'
+
 // When linking between pages on site
 // import { Link } from 'gatsby'
 
@@ -11,6 +14,10 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
     <p>I'm making this by following the Gatsby Tutorial.</p>
+    <StaticImage
+        alt="Random code from varius coding languages"
+        src="../images/codingScreen.jpg"
+      />
     </Layout>
   )
 };
