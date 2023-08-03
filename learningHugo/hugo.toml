@@ -2,3 +2,7 @@ baseURL = 'http://learningHugo.com/'
 languageCode = 'en-us'
 title = 'Learning Hugo'
 theme = 'ananke'
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  mood = "moods"
