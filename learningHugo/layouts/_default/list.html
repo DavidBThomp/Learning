@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Custom List Page</h1>
+    <p>Instead of using the theme template for list, this will be the default!</p>
+    <p>The {{ .Content }} below will pull data from the _index.md file</p>
+
+    {{ .Content }}
+
+    <br>
+    <p>This is a range function that prints the titles of all the pages.</p>
+    {{ range .Pages }}
+        {{ .Title }} - <a href="{{ .Permalink }}">{{ .Title}} Link</a><br>
+    {{ end }}
+
+</body>
+
+</html>
