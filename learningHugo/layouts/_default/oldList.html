@@ -1,5 +1,13 @@
-{{ define "main" }}
-    <h1>This is the List Template (List Page)</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
     <h1>Custom List Page</h1>
     <p>Instead of using the theme template for list, this will be the default!</p>
     <p>The {{ .Content }} below will pull data from the _index.md file</p>
@@ -11,4 +19,7 @@
     {{ range .Pages }}
         {{ .Title }} - <a href="{{ .Permalink }}">{{ .Title}} Link</a><br>
     {{ end }}
-{{ end }}
+
+</body>
+
+</html>
