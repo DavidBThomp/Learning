@@ -1,6 +1,7 @@
 ---
 title: "My Second Post"
 date: 2023-07-20T15:30:21-05:00
+color: "Green"
 draft: true
 ---
 

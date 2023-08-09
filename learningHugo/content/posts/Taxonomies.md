@@ -1,6 +1,8 @@
 ---
 title: "Taxonomies"
 date: 2023-08-03T12:11:43-05:00
+myVariable: "Custom Variable"
+color: "blue"
 draft: false
 author: "DBT59"
 tags: ["tag1","learning","tag2"]

@@ -1,6 +1,7 @@
 ---
 title: "Shortcodes"
 date: 2023-08-01T13:38:38-05:00
+color: "Red"
 draft: false
 author: "DBT59"
 ---

@@ -12,7 +12,21 @@
     <p>All Single Pages will now have a footer! - I think we will use partials for this in the future...</p>
 {{ end }}
 
+{{ .Content }}
+
 {{ define "footer" }}
     <h1>This is the single footer</h1>
     <!-- This will override base of template for sinlge pages -->
 {{ end }}
+
+<hr>
+<br>
+<br>
+<h2>Variables</h2>
+<p>{{ .Title }} -- {{ .Date }} -- {{ .Permalink }}</p><br>
+{{ .Params.myVariable }}
+
+<h3>Custom Variable</h3>
+{{ $myVarName := "aString"}}
+
+<h4 style="color: {{ .Params.color }}">{{ $myVarName }} - This changes color based on front matter</h4>
