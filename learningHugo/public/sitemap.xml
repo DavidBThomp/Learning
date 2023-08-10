@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://learningHugo.com/posts/functions/</loc>
+    <lastmod>2023-08-10T12:48:02-05:00</lastmod>
+  </url><url>
+    <loc>http://learningHugo.com/</loc>
+    <lastmod>2023-08-10T12:48:02-05:00</lastmod>
+  </url><url>
+    <loc>http://learningHugo.com/posts/</loc>
+    <lastmod>2023-08-10T12:48:02-05:00</lastmod>
+  </url><url>
+    <loc>http://learningHugo.com/posts/variables/</loc>
+    <lastmod>2023-08-10T12:46:38-05:00</lastmod>
+  </url><url>
+    <loc>http://learningHugo.com/basepost/</loc>
+    <lastmod>2023-08-10T12:41:23-05:00</lastmod>
+  </url><url>
     <loc>http://learningHugo.com/categories/cat1/</loc>
     <lastmod>2023-08-03T12:11:43-05:00</lastmod>
   </url><url>
@@ -23,13 +38,7 @@
     <loc>http://learningHugo.com/tags/learning/</loc>
     <lastmod>2023-08-03T12:11:43-05:00</lastmod>
   </url><url>
-    <loc>http://learningHugo.com/</loc>
-    <lastmod>2023-08-03T12:11:43-05:00</lastmod>
-  </url><url>
     <loc>http://learningHugo.com/moods/</loc>
-    <lastmod>2023-08-03T12:11:43-05:00</lastmod>
-  </url><url>
-    <loc>http://learningHugo.com/posts/</loc>
     <lastmod>2023-08-03T12:11:43-05:00</lastmod>
   </url><url>
     <loc>http://learningHugo.com/moods/smiles/</loc>

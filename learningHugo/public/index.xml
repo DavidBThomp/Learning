@@ -6,7 +6,39 @@
     <description>Recent content on Learning Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Aug 2023 12:11:43 -0500</lastBuildDate><atom:link href="http://learningHugo.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Aug 2023 12:48:02 -0500</lastBuildDate><atom:link href="http://learningHugo.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Functions</title>
+      <link>http://learningHugo.com/posts/functions/</link>
+      <pubDate>Thu, 10 Aug 2023 12:48:02 -0500</pubDate>
+      
+      <guid>http://learningHugo.com/posts/functions/</guid>
+      <description>Functions {{ truncate 25 &amp;ldquo;This is a really long string that has a lot of characters&amp;rdquo; }} {{ add 24 1 }} {{ singularize &amp;ldquo;characters&amp;rdquo;}}
+This is what a function looks like in HTML (This only works in layouts)
+{{ end }}</description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>http://learningHugo.com/posts/variables/</link>
+      <pubDate>Thu, 10 Aug 2023 12:46:38 -0500</pubDate>
+      
+      <guid>http://learningHugo.com/posts/variables/</guid>
+      <description>Variables Example {{ .Title }} &amp;ndash; {{ .Date }} &amp;ndash; {{ .Permalink }}
+{{ .Params.myVariable }}
+Custom Variable {{ $myVarName := &amp;ldquo;aString&amp;rdquo;}}
+{{ $myVarName }} - This changes color based on front matter </description>
+    </item>
+    
+    <item>
+      <title>BasePost</title>
+      <link>http://learningHugo.com/basepost/</link>
+      <pubDate>Thu, 10 Aug 2023 12:41:23 -0500</pubDate>
+      
+      <guid>http://learningHugo.com/basepost/</guid>
+      <description>This is the first poat</description>
+    </item>
+    
     <item>
       <title>Taxonomies</title>
       <link>http://learningHugo.com/posts/taxonomies/</link>

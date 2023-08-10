@@ -1,32 +1,29 @@
 {{ define "main" }}
-    <h1>This is the Single Template (Single Page)</h1>
-    <h1>Custom single page template</h1>
-    <h2>This will show up on every singple page template</h2>
-    <p>The content is below</p>
-    <hr>
-    <h3>File Title from Front Matter - {{ .Title }}</h3>
-    <h4>Date Published - {{ .Date }}</h4>
-    {{ .Content }}
-    <hr>
-    <h3>Footer</h3>
-    <p>All Single Pages will now have a footer! - I think we will use partials for this in the future...</p>
-{{ end }}
-
+<h1>This is the Single Template (Single Page)</h1>
+<h2>This will show up on every singple page template</h2>
+<p>The content is below</p>
+<hr>
+<h3>File Title from Front Matter - {{ .Title }}</h3>
+<h4>Date Published - {{ .Date }}</h4>
 {{ .Content }}
-
-{{ define "footer" }}
-    <h1>This is the single footer</h1>
-    <!-- This will override base of template for sinlge pages -->
-{{ end }}
-
 <hr>
 <br>
-<br>
-<h2>Variables</h2>
-<p>{{ .Title }} -- {{ .Date }} -- {{ .Permalink }}</p><br>
-{{ .Params.myVariable }}
+<h2>Functions</h2>
+{{ truncate 25 "This is a really long string that has a lot of characters" }} {{ add 24 1 }} {{ singularize "characters"}}
 
-<h3>Custom Variable</h3>
+<hr>
+{{ .Title }} -- {{ .Date }} -- {{ .Permalink }} <br>
+
+  
+{{ .Params.myVariable }} <br>
+
 {{ $myVarName := "aString"}}
 
-<h4 style="color: {{ .Params.color }}">{{ $myVarName }} - This changes color based on front matter</h4>
+<span style="color: {{ .Params.color }};">{{ $myVarName }}</span> - This changes color based on front matter
+
+{{ end }}
+
+{{ define "footer" }}
+<h1>This is the single footer</h1>
+<!-- This will override base of template for sinlge pages -->
+{{ end }}
