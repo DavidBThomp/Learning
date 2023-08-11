@@ -9,17 +9,33 @@
 <hr>
 <br>
 <h2>Functions</h2>
-{{ truncate 25 "This is a really long string that has a lot of characters" }} {{ add 24 1 }} {{ singularize "characters"}}
+{{ truncate 25 "This is a really long string that has a lot of characters" }} {{ add 24 1 }} {{ singularize
+"characters"}}
 
 <hr>
 {{ .Title }} -- {{ .Date }} -- {{ .Permalink }} <br>
 
-  
+
 {{ .Params.myVariable }} <br>
 
 {{ $myVarName := "aString"}}
 
 <span style="color: {{ .Params.color }};">{{ $myVarName }}</span> - This changes color based on front matter
+
+<h2>If then Statements</h2>
+{{ $var1 := 2 }}
+{{ $var2 := 2 }}
+{{ $var3 := 3 }}
+{{ if and (lt $var1 $var2) (lt $var1 $var3) }}
+<p>Var 1 less than var 2 and var 3.</p>
+{{ else }}
+<p>Var 1 greater than var 2 and/or var 3</p>
+{{ end }}
+
+{{ $currentPage := .Title }}
+{{ range .Site.Pages }}
+<li><a href="{{ .Permalink }}" style=" {{ if eq .Title $currentPage}}background-color: yellow; {{ end }}">{{ .Title }}</a></li>
+{{ end }}
 
 {{ end }}
 
