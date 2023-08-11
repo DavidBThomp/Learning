@@ -37,6 +37,13 @@
 <li><a href="{{ .Permalink }}" style=" {{ if eq .Title $currentPage}}background-color: yellow; {{ end }}">{{ .Title }}</a></li>
 {{ end }}
 
+
+<hr>
+<h2>Data Files Structure</h2>
+{{ range .Site.Data.usCapitols}}
+ {{ .name }} - {{ .capital }} <br>
+{{ end }}
+
 {{ end }}
 
 {{ define "footer" }}
