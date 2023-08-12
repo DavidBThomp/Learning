@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ partial "header" . }}
+{{ partial "dictHeader" (dict "myTitle" "Custom Dict Title" "myDate" "Custom Dict Date - Today")}}
 <h1>This is the Single Template (Single Page)</h1>
 <h2>This will show up on every singple page template</h2>
 <p>The content is below</p>
