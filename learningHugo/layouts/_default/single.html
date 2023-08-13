@@ -1,6 +1,9 @@
 {{ define "main" }}
 {{ partial "header" . }}
 {{ partial "dictHeader" (dict "myTitle" "Custom Dict Title" "myDate" "Custom Dict Date - Today")}}
+
+{{ $image := resources.Get "images/afterl1feLogo.png"}}
+<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
 <h1>This is the Single Template (Single Page)</h1>
 <h2>This will show up on every singple page template</h2>
 <p>The content is below</p>
